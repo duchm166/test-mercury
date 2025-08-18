@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: smartfox-server
+spec:
+  replicas: 5
+  template:
+    spec:
+      containers:
+      - name: smartfox
+        image: brentjohnson/smartfoxserver:latest
+        ports:
+        - containerPort: 9933
