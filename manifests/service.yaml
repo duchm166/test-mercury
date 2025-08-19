@@ -4,9 +4,13 @@ metadata:
   name: smartfox-service
   namespace: default
 spec:
+  type: NodePort  # Hoặc LoadBalancer
   selector:
     app: smartfox
   ports:
   - port: 9933
-    nodePort: 39933
-  type: NodePort
+    targetPort: 9933
+    nodePort: 30033
+  - port: 8888
+    targetPort: 8080
+    nodePort: 30088
