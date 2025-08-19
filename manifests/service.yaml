@@ -10,5 +10,3 @@ spec:
   ports:
   - port: 9933
     targetPort: 9933
-  - port: 8888
-    targetPort: 8080
