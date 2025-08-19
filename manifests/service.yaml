@@ -9,4 +9,4 @@ spec:
     app: smartfox
   ports:
   - port: 9933
-    targetPort: 9933
+    nodePort: 9933
