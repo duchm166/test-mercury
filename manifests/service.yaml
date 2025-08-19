@@ -4,7 +4,6 @@ metadata:
   name: smartfox-service
   namespace: default
 spec:
-  clusterIP: None
   selector:
     app: smartfox
   ports:
