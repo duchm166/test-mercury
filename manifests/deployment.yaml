@@ -1,10 +1,18 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: smartfox-server
+  namespace: default
 spec:
-  replicas: 5
+  serviceName: smartfox-service
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smartfox
   template:
+    metadata:
+      labels:
+        app: smartfox
     spec:
       containers:
       - name: smartfox
