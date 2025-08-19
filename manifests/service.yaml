@@ -10,3 +10,4 @@ spec:
   ports:
   - port: 9933
     nodePort: 39933
+  type: NodePort
