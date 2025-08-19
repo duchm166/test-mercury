@@ -8,7 +8,9 @@ spec:
   selector:
     app: smartfox
   ports:
-  - port: 9933
+  - name: tcp-smartfox
+    port: 9933
     targetPort: 9933
-  - port: 8080
+  - name: admin-web
+    port: 8080
     targetPort: 8080
