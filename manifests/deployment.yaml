@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   serviceName: smartfox-service
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: smartfox
