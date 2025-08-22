@@ -39,12 +39,12 @@ spec:
       protocol: TCP
       port: 8080
       targetPort: 8080
-      nodePort: 38080
+      nodePort: 30080
     - name: mobile
       protocol: TCP
       port: 9933
       targetPort: 9933
-      nodePort: 39933
+      nodePort: 30933
       
 ---
 # Service cho pod app-0 → nodePort 30001
