@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sfs
+  name: sfs-node2
   namespace: default
 spec:
   replicas: 1
@@ -28,7 +28,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sfs
+  name: sfs-node3
   namespace: default
 spec:
   replicas: 1
